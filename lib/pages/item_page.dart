@@ -16,6 +16,15 @@ class ItemPage extends StatelessWidget {
       ),
       home: Scaffold(
           appBar: AppBar(
+            leading: new IconButton(
+            icon: new Icon(Icons.arrow_back),
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomePage()),
+              );
+            },
+          ),
             backgroundColor: Colors.brown.shade600,
             title: Text("Detail Bunga"),
           ),
